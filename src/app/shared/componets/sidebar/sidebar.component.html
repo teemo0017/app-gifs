@@ -3,7 +3,10 @@
   <h3 class="text-light">Gifs App</h3>
   <hr class="text-light">
   <div class="list-group list-reset"  *ngFor="let tag of tags() ">
-    <button class="list-group-item list-group-item-action mb-2" >{{tag}}</button>
+    <button (click)="TagClick(tag)"
+     class="list-group-item list-group-item-action mb-2" >
+      {{tag | titlecase }}
+    </button>
 
   </div>
 
