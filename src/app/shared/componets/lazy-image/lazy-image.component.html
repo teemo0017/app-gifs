@@ -1,0 +1,5 @@
+
+  <div class="d-flex justify-content-center ">
+    <div [ngStyle]="{display: loaded ? '' : 'none'} " class="card-header animate__animated animate__fadeOut"> <img (load)="isLoaded()" [src]="linkImage"  class="img-fluid " ></div>
+    <img *ngIf="!loaded" src="./assets/loader.svg" alt="">
+  </div>
